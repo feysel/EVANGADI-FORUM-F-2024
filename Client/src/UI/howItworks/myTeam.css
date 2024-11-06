@@ -1,0 +1,106 @@
+:root {
+  --primary-color: #516cf0;
+  --secondary-color: #ff8500;
+  --text-color: #62626f;
+  --font-family: "Lato", sans-serif;
+}
+.outer-container {
+  background-color: #f9f9f9;
+}
+.team-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+  background-color: --primary-color;
+}
+
+.team-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.team-name {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icon-link {
+  color: #007bff;
+  transition: color 0.2s;
+}
+
+.icon-link:hover {
+  color: #0056b3;
+}
+/* Styling for mobile devices */
+/* @media (max-width: 768px) {
+  .team-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .team-card {
+    padding: 15px;
+  }
+
+  .team-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-name {
+    font-size: 1.2rem;
+  }
+
+  .icon-link {
+    font-size: 20px;
+  }
+} */
+
+/* For larger screens */
+/* @media (min-width: 1200px) {
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+  }
+} */

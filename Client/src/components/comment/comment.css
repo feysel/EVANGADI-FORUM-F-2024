@@ -1,0 +1,55 @@
+.comment {
+  width: 80%;
+  max-width: 800px; /* Optional: Limit the maximum width */
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Align items to fill the form */
+  gap: 20px;
+}
+
+.comment form > textarea {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 4px; /* Rounded corners */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.comment form > textarea:focus {
+  border-color: #516cf0; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.comment form button {
+  color: #fff;
+  background-color: #516cf0;
+  padding: 5px 10px;
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.comment form button:hover {
+  background-color: #415bb5; /* Darker shade on hover */
+}
+
+.comment .error-message {
+  color: red; /* Red color for error messages */
+  margin-top: 10px; /* Space above the error message */
+}
+
+.comment .loading {
+  margin-top: 10px; /* Space above loading text */
+  color: #666; /* Subtle color for loading text */
+}

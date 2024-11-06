@@ -1,0 +1,13 @@
+/* Add this in your CSS file */
+.notification-popup {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

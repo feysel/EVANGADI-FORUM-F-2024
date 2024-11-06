@@ -1,0 +1,116 @@
+footer {
+  width: 100%;
+  background-color: #3b455a;
+  padding: 60px 0 40px 0;
+  position: sticky;
+}
+.footer-container {
+  position: sticky;
+}
+footer > div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Added for responsive layout */
+  align-self: center;
+  padding: 20px 10%;
+}
+
+footer .social-links {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.2rem; /* Increased font size for better visibility */
+}
+
+footer .social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e9ae0b;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+footer .social-links a:hover {
+  background-color: #fff;
+  color: #0951eb;
+}
+
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Changed from "start" to "flex-start" */
+  gap: 20px;
+  color: #722f2f;
+  font-size: 1rem;
+}
+
+footer h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+footer .footer-links > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Changed from "start" to "flex-start" */
+  gap: 15px;
+}
+
+footer .footer-links > ul > li > a {
+  color: rgba(213, 213, 213, 0.8); /* Improved link contrast */
+  text-decoration: none;
+  font-size: 0.95rem; /* Slightly increased font size */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+footer .footer-links > ul > li > a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Changed from "start" to "flex-start" */
+  gap: 20px;
+  font-size: 1rem;
+  color: #e9ae0b;
+}
+
+footer .contact > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer .contact > ul > li > a {
+  color: rgba(243, 182, 16, 0.8); /* Improved text contrast */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  footer > div {
+    flex-direction: column; /* Stack the sections vertically on smaller screens */
+    align-items: center; /* Center-align content */
+    text-align: center; /* Center text */
+  }
+
+  footer .social-links {
+    justify-content: center;
+  }
+
+  footer .footer-links,
+  footer .contact {
+    align-items: center; /* Center content for small screens */
+  }
+}
